@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automata Cipher - Decrypt</title>
+    <link rel="stylesheet" href="../static/css/encryptcss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add this CSS to your existing CSS file or within a <style> tag */
+      .drop-area {
+        border: 2px dashed #ccc;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* For positioning the image */
+        cursor: pointer; /* Change cursor to indicate clickable area */
+        margin-bottom: 20px; /* Spacing between drop area and button */
+      }
+
+      .drop-area img {
+        max-width: 100px; /* Adjust size of the image */
+        display: block; /* Ensure image is displayed as block */
+        margin: 0 auto 10px; /* Center the image and add margin below */
+      }
+
+      .drop-area.dragging {
+        border-color: #000;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="logoimg"
+          src="../static/images/logoWithText.png"
+          alt="Automata Cipher logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('encryption') }}">Encrypt</a></li>
+          <li><a href="{{ url_for('decrypt') }}">Decrypt</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('index') }}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form-input">
+        <form
+          action="/decrypt_file"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <label for="decryptionKey">
+            <h2>Decryption key:</h2>
+            <input
+              type="text"
+              id="decryptionKey"
+              name="decryptionKey"
+              placeholder="Enter Key"
+              required
+            />
+            <h2>File Upload:</h2>
+            <input
+              type="file"
+              id="input-file"
+              name="input-files"
+              hidden
+              multiple
+              required
+            />
+            <div id="file-view" class="drop-area">
+              <img src="../static/images/upload.png" alt="Upload Icon" />
+              <!-- Image for the drop area -->
+              <p>
+                Drag and drop or click here to upload encrypted and perm files
+              </p>
+              <span>Upload both encrypted file and permission file</span>
+            </div>
+            <ul id="file-list"></ul>
+            <button id="upload" type="submit">Upload</button>
+          </label>
+        </form>
+      </div>
+    </main>
+    <script src="../static/javascript/descript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automata Cipher</title>
+    <link rel="stylesheet" href="../static/css/stylesIndex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="logoimg"
+          src="../static/images/logoWithText.png"
+          alt="Automata Cipher logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('encryption') }}">Encrypt</a></li>
+          <li><a href="{{ url_for('decrypt') }}">Decrypt</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('index') }}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-container">
+        <div class="login-form">
+          <img
+            class="LoginImg"
+            src="../static/images/logoOnly.png"
+            alt="Automata Cipher Logo only"
+            style="height: 75%"
+          />
+          <img
+            class="LoginImg"
+            src="../static/images/logoTextOnly.png"
+            alt="Automata Cipher Text"
+          />
+          <form>
+            <label for="username">Username</label>
+            <input
+              class="inputfield"
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+            <br />
+            <label for="password">Password</label>
+            <input
+              class="inputfield"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+            <a href="./encryption">
+              <button
+                id="LoginBut"
+                type="submit"
+                style="width: 50%; margin-left: 25%; margin-top: 10px"
+              >
+                Login
+              </button>
+            </a>
+          </form>
+        </div>
+        <p>New user? <a id="signUpButton" href="./signup">Sign up</a></p>
+      </div>
+    </main>
+  </body>
+</html>

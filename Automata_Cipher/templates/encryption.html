@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automata Cipher</title>
+    <link rel="stylesheet" href="../static/css/encryptcss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="logoimg"
+          src="../static/images/logoWithText.png"
+          alt="Automata Cipher logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('encryption') }}">Encrypt</a></li>
+          <li><a href="{{ url_for('decrypt') }}">Decrypt</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('index') }}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form-input">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <label for="input-files" id="dropArea">
+            <h2>Encryption key:</h2>
+            <input
+              type="text"
+              id="encryptionKey"
+              name="encryptionKey"
+              placeholder="Enter Key"
+              required
+            />
+            <h2>File Upload:</h2>
+            <input type="file" id="input-file" name="file" hidden required />
+            <div
+              id="file-view"
+              onclick="document.getElementById('input-file').click();"
+            >
+              <img src="../static/images/upload.png" />
+              <p style="color: black">
+                Drag and drop or click here<br />to upload a file
+              </p>
+              <span>Upload any file from desktop to encrypt</span>
+            </div>
+            <button type="submit" id="upload">Upload</button>
+          </label>
+        </form>
+      </div>
+    </main>
+    <script src="../static/javascript/enscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    background-color: #222222;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
+header {
+    color: #000000;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    font-size: 1.25rem;
+    padding-left: 15px;
+    display: inline-block;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-color: #2f4550;
+}
+
+.login-container {
+    height: 50%;
+    width: 20%;
+    background-color: #586f7c;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-form img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin-top: 0;
+    padding-bottom: 0;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    background-color: #ffffff;
+    color: #222222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#logoimg{
+    height: 45px;
+}
+
+#signUpButton{
+    align-items: end;
+    color: cyan;
+}
+
+.loginImg{
+    height: 45px;
+    margin: 0;
+}
+
+form{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+#loginBut{
+    align-self: center;
+}
+

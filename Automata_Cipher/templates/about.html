@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Automata Cipher</title>
+    <link rel="stylesheet" href="../static/css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="logoimg"
+          src="../static/images/logoWithText.png"
+          alt="Automata Cipher logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('encryption') }}">Encrypt</a></li>
+          <li><a href="{{ url_for('decrypt') }}">Decrypt</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('index') }}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="card-container">
+        <div class="card">
+          <div class="avatar">
+            <img
+              src="../static/images/aboutimg.png"
+              alt="User Avatar"
+              class="avatar"
+            />
+          </div>
+          <div class="info">
+            <p>Amogh Sahore</p>
+            <p>2241905</p>
+          </div>
+          <br />
+          <button>Contact</button>
+        </div>
+
+        <div class="card">
+          <div class="avatar">
+            <img
+              src="../static/images/aboutimg.png"
+              alt="User Avatar"
+              class="avatar"
+            />
+          </div>
+          <div class="info">
+            <p>Ankit Kumar Sahoo</p>
+            <p>2241306</p>
+          </div>
+          <br />
+          <button>Contact</button>
+        </div>
+
+        <div class="card">
+          <div class="avatar">
+            <img
+              src="../static/images/aboutimg.png"
+              alt="User Avatar"
+              class="avatar"
+            />
+          </div>
+          <div class="info">
+            <p>Nishi Agarwal</p>
+            <p>2241334</p>
+          </div>
+          <br />
+          <button>Contact</button>
+        </div>
+
+        <div class="card">
+          <div class="avatar">
+            <img
+              src="../static/images/aboutimg.png"
+              alt="User Avatar"
+              class="avatarimg"
+            />
+          </div>
+          <div class="info">
+            <p>S Michael Vikramanaih</p>
+            <p>2241342</p>
+          </div>
+          <br />
+          <button>Contact</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

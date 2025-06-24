@@ -1,0 +1,126 @@
+body {
+    background-color: #222222;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
+header {
+    color: #000000;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    font-size: 1.25rem;
+    padding-left: 15px;
+    display: inline-block;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-color: #2f4550;
+}
+
+p {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#logoimg{
+    height: 45px;
+}
+
+#signUpButton{
+    align-items: end;
+    color: cyan;
+}
+
+.loginImg{
+    height: 45px;
+    margin: 0;
+}
+
+form{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+#loginBut{
+    align-self: center;
+}
+
+.download-container{
+    background-color: #586f7c;
+    border-radius: 20px;
+    height: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-container img{
+    height:30%;
+}
+
+.download-container h1{
+    margin-top: 50px;
+    font-weight: 750;
+}
+
+.download-container button{
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 50px
+}
+
+.download-container button:hover{
+    cursor: pointer;
+}
+
+.download-container h1{
+    color: white;
+}
